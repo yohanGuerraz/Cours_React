@@ -4,9 +4,7 @@ Sauvegarde du Cours et des différents projets en React
 #### Dans cette solution sont regroupés les projet suivant:
 
 - [Cours_React](#Cours)
-- [MonPendu](#projet-MonPendu)
-- [reference](#projet-reference)
-- [JeuxVideo](#projet-JeuxVideo)
+- [MonProjet](#projet-MonProjet)
 - [Sources](#Sources)
 	
 **************************************************************************************
