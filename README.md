@@ -30,24 +30,6 @@ Declaration d'une variable en JavaScript
 let myVariable = 'Bob';
 myVariable = 'Étienne';
 ```
-Declaration d'une classe en JavaScript
-
-Description :
-
-Exemple :
-```js
-let myVariable = 'Bob';
-myVariable = 'Étienne';
-```
-Declaration d'un objet en JavaScript
-
-Description :
-
-Exemple :
-```js
-let myVariable = 'Bob';
-myVariable = 'Étienne';
-```
 export en JavaScript
 
 Description :
@@ -88,4 +70,52 @@ let arr2 = ['X', 'Y', 'Z'];
 let result = [...arr1, ...arr2];
 
 console.log(result); // ['A', 'B', 'C', 'X', 'Y', 'Z']
+```
+
+Un hook en react 
+
+Description :
+Les hooks de React sont apparus dans la version 16.7.0 alpha et sont des fonctions qui permettent d’utiliser toutes les fonctionnalités des classes React dans des composants fonctionnels. Ces hooks permettent entre autre de remplacer le state et les méthodes de cycle de vie d’une classe React. 
+
+Exepmle de Hook: 
+
+Les Hooks de base
+
+- useState
+- useEffect
+- useContext
+
+Hooks supplémentaires
+
+- useReducer
+- useCallback
+- useMemo
+- useRef
+- useImperativeHandle
+- useLayoutEffect
+- useDebugValue
+
+exemple de code avec hook 
+```js
+import React, { useState, useEffect } from 'react';
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  // Similaire à componentDidMount et componentDidUpdate :
+  useEffect(() => {
+    // Met à jour le titre du document via l’API du navigateur
+    document.title = `Vous avez cliqué ${count} fois`;
+  });
+
+  return (
+    <div>
+      <p>Vous avez cliqué {count} fois</p>
+      <button onClick={() => setCount(count + 1)}>
+        Cliquez ici
+      </button>
+    </div>
+  );
+}
+
 ```
